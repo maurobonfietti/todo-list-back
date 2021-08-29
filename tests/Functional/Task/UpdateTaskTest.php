@@ -7,7 +7,7 @@ class UpdateTaskTest extends BaseTest
     public function testUpdateTaskOk()
     {
         $client = self::createClient();
-        $client->request('PATCH', '/task/845', [
+        $client->request('PATCH', '/task/6', [
             'json' => '{"title":"PHPUnit Test", "description":"Do not remove this task ;-)", "status":"finished"}',
         ], [], ['HTTP_authorization' => $this->getAuthToken()]);
 

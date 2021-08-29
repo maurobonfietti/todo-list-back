@@ -8,7 +8,7 @@ class UpdatePriorityTaskTest extends BaseTest
     {
         $client = self::createClient();
         $client->request(
-            'PATCH', '/task/priority/845', 
+            'PATCH', '/task/priority/6', 
             [], 
             [], 
             ['HTTP_authorization' => $this->getAuthToken()]
